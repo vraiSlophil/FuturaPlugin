@@ -1,0 +1,26 @@
+name: Futuraplugin
+version: 1.4
+main: fr.slophil.FuturaPlugin
+api-version: 1.16
+authors: [Slophil]
+description: The official plugin of Futuracraft
+commands:
+  nv:
+    permission: futuraplugin.nightvision.use
+    aliases:
+      - nvision
+      - nightv
+      - nightvision
+  randomteleport:
+    aliases:
+      - rtp
+      - randomtp
+      - rteleport
+  discord:
+  vote:
+  boutique:
+  site:
+  wikisf:
+    aliases:
+      - wsf
+  blood:

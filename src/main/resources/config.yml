@@ -1,0 +1,83 @@
+# for all commands
+
+ExecuteOnlyByAPlayer: "&6&lInfo &r>> &f&lCette commande ne peut être effectuée que par un joueur"
+
+# for /nightvision
+
+NightVisionActivated: "&6&lInfo &r>> &f&lVous avez maintenant l'effet de Night Vision"
+NightVisionDisabled: "&6&lInfo &r>> &f&lVous n'avez plus l'effet de Night Vision"
+
+# for /randomteleport
+
+YourNotInAllowedWorld: "&6&lInfo &r>> &f&lVous ne pouvez pas faire /rtp dans ce monde"
+PlayerIsNotInAllowedWorld: "&6&lInfo &r>> &f&lLe joueur n'est pas dans un monde compatible avec le /rtp"
+YouHaveBeenTeleportedMessage: "&6&lInfo &r>> &f&lVous avez été télééporté avec succès"
+Cooldown: 10 #minutes
+CooldownMessage: "&6&lInfo &r>> &f&lVous ne pourrez faire /rtp que dans %timeleft% &f&lminute(s) !"
+AdminMaxRtp: 2000
+AllowedWorlds:
+  ressource:
+    MaxRtp: 2400
+  lune:
+    MaxRtp: 900
+
+# for /discord
+
+DiscordLink: "https://discord.gg/e5uaSD3646"
+DiscordMessage: "&6&lInfo &r>> &f&lN'hesite pas a venir voir notre serveur discord ! &f(clique sur le message)"
+DiscordHoverMessage: "&9Clique ici pour rejoindre notre serveur"
+
+# for /wikisf
+
+WikiSfLink: "https://github.com/Slimefun/Slimefun4/wiki"
+WikiSfMessage: "&6&lInfo &r>> &f&lVoici le wiki officiel de slimefun ! &f(clique sur le message)"
+WikiSfHoverMessage: "&9Clique pour accéder au wiki de slimefun"
+
+# for /vote
+
+VoteLink: "https://futuracraft.fr/vote"
+VoteMessage: "&6&lInfo &r>> &f&lVoici le lien pour voter ! &f(clique sur le message)"
+VoteHoverMessage: "&9Clique pour accéder à notre site !"
+
+# for /boutique
+
+BoutiqueLink: "https://futuracraft.fr/shop"
+BoutiqueMessage: "&6&lInfo &r>> &f&lVoici le lien pour la boutique ! &f(clique sur le message)"
+BoutiqueHoverMessage: "&9Clique pour accéder à notre boutique en ligne !"
+
+# for /site
+
+SiteLink: "https://futuracraft.fr/"
+SiteMessage: "&6&lInfo &r>> &f&lVoici le lien pour aller sur notre site internet ! &f(clique sur le message)"
+SiteHoverMessage: "&9Clique pour accéder à notre site !"
+
+#for nerf moon mining
+#-----------------------------------------------------#
+#    these numbers are the percentage chance of       #
+#     drop cobblestone by mining each mineral.        #
+#-----------------------------------------------------#
+
+NerfMiningAllowedWorlds:
+  lune:
+    DIAMOND_ORE: 50
+    EMERALD_ORE: 50
+    IRON_ORE: 50
+    GOLD_ORE: 50
+    REDSTONE_ORE: 30
+    LAPIS_LAZULI_ORE: 50
+    COAL_ORE: 30
+
+#for do damage
+
+NoDamageAllowedWolrds:
+  - ressource
+
+#for /blood
+
+DefaultBloodVision: true
+BloodCommandUsage: "&6&lInfo &r>> &f&lFaites simplement '&f/blood [true|false]&l' :)"
+DoBlood: "&6&lInfo &r>> &f&lFaites '/blood false' pour désactiver le sang"
+
+#for dailyCCReload
+
+Time: 3:05
