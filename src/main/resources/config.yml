@@ -77,7 +77,9 @@ NoDamageAllowedWolrds:
 DefaultBloodVision: true
 BloodCommandUsage: "&6&lInfo &r>> &f&lFaites simplement '&f/blood [true|false]&l' :)"
 DoBlood: "&6&lInfo &r>> &f&lFaites '/blood false' pour désactiver le sang"
+BloodNowTrue: "&6&lInfo &r>> &f&lLe sang est activé sur vous"
+BloodnowFalse:  "&6&lInfo &r>> &f&lLe sang est désactivé sur vous"
 
 #for dailyCCReload
 
-Time: 3:05
+Time: 3:05:00

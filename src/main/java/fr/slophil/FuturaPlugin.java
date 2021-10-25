@@ -5,14 +5,12 @@ import fr.slophil.event.OnDamageRessource;
 import fr.slophil.event.OnJoin;
 import fr.slophil.event.OnMiningMoon;
 import fr.slophil.other.BloodEffect;
-import fr.slophil.other.DailyCCReload;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class FuturaPlugin extends JavaPlugin {
 
     private BloodCommand bloodCommand;
-    private DailyCCReload dailyCCReload;
 
     public FuturaPlugin() {
     }
@@ -25,7 +23,6 @@ public class FuturaPlugin extends JavaPlugin {
         this.getServer().getPluginManager().registerEvents(new OnMiningMoon(this), this);
         this.getServer().getPluginManager().registerEvents(new OnJoin(this), this);
         this.bloodCommand = new BloodCommand(this);
-        this.dailyCCReload = new DailyCCReload(this);
         System.out.println(ChatColor.DARK_GREEN + "+------------------+");
         System.out.println(ChatColor.DARK_GREEN + "+   FuturaPlugin   +");
         System.out.println(ChatColor.DARK_GREEN + "+     Enabled !    +");
@@ -55,9 +52,5 @@ public class FuturaPlugin extends JavaPlugin {
     }
     public BloodCommand getBloodCommand(){
         return bloodCommand;
-    }
-
-    public DailyCCReload getDailyCCReload(){
-        return dailyCCReload;
     }
 }

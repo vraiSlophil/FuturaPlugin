@@ -1,6 +1,8 @@
 package fr.slophil.commands;
 
 import fr.slophil.FuturaPlugin;
+import net.md_5.bungee.api.ChatMessageType;
+import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
@@ -28,15 +30,22 @@ public class BloodCommand implements TabExecutor {
 
             if (!(args.length == 1)){
                 player.sendMessage(this.main.color('&', this.main.getConfig().getString("BloodCommandUsage")));
+                return false;
             }
 
             if (args[0].equalsIgnoreCase("true")) {
                 main.getConfig().set(configPath, true);
-                main.saveDefaultConfig();
+                main.saveConfig();
+                String message = this.main.color('&', this.main.getConfig().getString("BloodNowTrue"));
+                player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(message));
+                return true;
             }
             if (args[0].equalsIgnoreCase("false")) {
                 main.getConfig().set(configPath, false);
-                main.saveDefaultConfig();
+                main.saveConfig();
+                String message = this.main.color('&', this.main.getConfig().getString("BloodNowFalse"));
+                player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(message));
+                return true;
             }
 
         }
